@@ -4,7 +4,7 @@ import './VideoPlayer.styles.css';
 
 function VideoPlayer(props) {
   return (
-    <div className="video-player">
+    <div data-testid="video-player" className="video-player">
       <iframe
         className="video-youtube"
         allowFullScreen

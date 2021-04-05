@@ -4,7 +4,7 @@ import './Loading.styles.css';
 
 function Loading() {
   return (
-    <div className="loading">
+    <div data-testid="loading" className="loading">
       <p>Loading...</p>
     </div>
   );

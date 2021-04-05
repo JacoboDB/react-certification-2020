@@ -7,7 +7,11 @@ function VideoRecomendationsList(props) {
   const items = props.videos.map((item) => (
     <VideoRecomendationsItem video={item} videos={props.videos} />
   ));
-  return <div className="video-recomendations-list">{items}</div>;
+  return (
+    <div data-testid="video-recomendations-list" className="video-recomendations-list">
+      {items}
+    </div>
+  );
 }
 
 export default VideoRecomendationsList;

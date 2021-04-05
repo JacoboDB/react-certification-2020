@@ -9,7 +9,11 @@ function VideoList(props) {
   const items = filteredResults.map((item) => (
     <VideoItem video={item} videos={filteredResults} />
   ));
-  return <div className="video-list">{items}</div>;
+  return (
+    <div data-testid="video-list" className="video-list">
+      {items}
+    </div>
+  );
 }
 
 export default VideoList;

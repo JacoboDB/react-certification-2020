@@ -5,7 +5,7 @@ import './VideoItem.styles.css';
 
 function VideoItem(props) {
   return (
-    <div className="video-item">
+    <div data-testid="video-item" className="video-item">
       <Link
         to={{
           pathname: `/video/${props.video.id.videoId}`,

@@ -5,7 +5,7 @@ import './UserActions.styles.css';
 
 function UserActions(props) {
   return (
-    <div className="user-actions">
+    <div data-testid="user-actions" className="user-actions">
       <div>
         {props.userImage ? (
           <img src={props.userImage} alt="User profile" />

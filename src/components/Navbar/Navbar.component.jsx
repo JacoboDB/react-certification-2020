@@ -18,7 +18,7 @@ function Navbar(props) {
     }
   }
   return (
-    <div className="navbar">
+    <div data-testid="navbar" className="navbar">
       <div className="navbar-left">
         <DrawerMenu />
         <SearchInput
