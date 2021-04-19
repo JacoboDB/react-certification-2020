@@ -17,20 +17,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  text-rendering: optimizeLegibility;
-  background-image: linear-gradient(
-    120deg,
-    #eea2a2 0,
-    #bbc1bf 19%,
-    #57c6e1 42%,
-    #b49fda 79%,
-    #7ac5d8 100%
-  );
-  background-size: 400% 400%;
-  background-position: var(--bg-position);
-  transition: background-position 2s ease;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .separator::before {
@@ -49,5 +35,26 @@ a:active {
   color: blueviolet;
 }
 
-hr {
+.white-theme,
+.white-theme h1,
+.white-theme h2,
+.white-theme h3,
+.white-theme h4,
+.white-theme h5,
+.white-theme h6,
+.white-theme p {
+  color: black;
+  background-color: white;
+}
+
+.dark-theme,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6,
+.dark-theme p {
+  color: lightgray;
+  background-color: #303030;
 }
