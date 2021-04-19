@@ -5,7 +5,7 @@ import './VideoRecomendationsList.styles.css';
 
 function VideoRecomendationsList(props) {
   const items = props.videos.map((item) => (
-    <VideoRecomendationsItem video={item} videos={props.videos} />
+    <VideoRecomendationsItem key={item.id.videoId} video={item} videos={props.videos} />
   ));
   return (
     <div data-testid="video-recomendations-list" className="video-recomendations-list">

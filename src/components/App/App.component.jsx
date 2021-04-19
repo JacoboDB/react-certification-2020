@@ -1,29 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import useYoutubeSearchApi from '../../hooks/useYoutubeSearchApi';
+
+import VideoProvider from '../../state/VideoProvider';
 
 import Navbar from '../Navbar';
 import HomePage from '../../pages/Home';
 import VideoDetail from '../../pages/VideoDetail';
 
 function App() {
-  const [searchValue, setSearchValue] = useState('wizeline');
-  const [isLoading, videoList] = useYoutubeSearchApi(searchValue);
   return (
-    <div>
+    <VideoProvider>
       <Router>
-        <Navbar searchValue={searchValue} setSearchValue={setSearchValue} />
-        <Switch>
-          <Route path="/video/:video">
-            <VideoDetail />
-          </Route>
-          <Route path="/">
-            <HomePage videos={videoList} isLoading={isLoading} />
-          </Route>
-        </Switch>
+        <div>
+          <Navbar />
+          <Switch>
+            <Route path="/video/:video">
+              <VideoDetail />
+            </Route>
+            <Route path="/">
+              <HomePage />
+            </Route>
+          </Switch>
+        </div>
       </Router>
-    </div>
+    </VideoProvider>
   );
 }
 

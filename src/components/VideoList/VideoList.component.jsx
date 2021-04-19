@@ -7,7 +7,7 @@ function VideoList(props) {
   const videos = props.videos ? props.videos : [];
   const filteredResults = videos.filter((item) => item.id.kind === 'youtube#video');
   const items = filteredResults.map((item) => (
-    <VideoItem video={item} videos={filteredResults} />
+    <VideoItem key={item.id.videoId} video={item} videos={filteredResults} />
   ));
   return (
     <div data-testid="video-list" className="video-list">

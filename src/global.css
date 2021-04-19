@@ -35,5 +35,26 @@ a:active {
   color: blueviolet;
 }
 
-hr {
+.white-theme,
+.white-theme h1,
+.white-theme h2,
+.white-theme h3,
+.white-theme h4,
+.white-theme h5,
+.white-theme h6,
+.white-theme p {
+  color: black;
+  background-color: white;
+}
+
+.dark-theme,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6,
+.dark-theme p {
+  color: lightgray;
+  background-color: #303030;
 }

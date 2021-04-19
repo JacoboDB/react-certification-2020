@@ -1,7 +1,4 @@
 /* The switch - the box around the slider */
-.toggle {
-  width: 60px;
-}
 .switch {
   position: relative;
   display: inline-block;
@@ -42,11 +39,11 @@
 }
 
 input:checked + .slider {
-  background-color: gray;
+  background-color: rgb(66, 66, 66);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px gray;
+  box-shadow: 0 0 1px rgb(66, 66, 66);
 }
 
 input:checked + .slider:before {
